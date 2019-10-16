@@ -1,0 +1,30 @@
+<form action="" class="col-md-4 offset-4 mt-4 card cardbody" [formGroup]="form">
+    <h1 class="text-center text-white bg-warning">Add Movie</h1>
+    <div class="form-group">
+      <input type="text" name="text" id="text" placeholder="Add Movie"class="form-control" formControlName="text">
+      <div *ngIf ="text.touched && text.invalid" >
+         <p  class="alert-danger" *ngIf="text.errors.required">*this field is required</p>
+      </div>
+    </div>
+     <div class="form-group">
+        <input type="text" name="text" id="text" placeholder="Movie Title"class="form-control" formControlName="text" >
+         <div *ngIf ="text.touched && text.invalid" >
+             <p  class="alert-danger" *ngIf="text.errors.required">*this field is required</p>
+        </div>
+     </div>
+    <div class="form-group">
+         <input type="text" name="text" id="text" placeholder="Movie imgUrl"class="form-control" formControlName="text">
+         <div *ngIf ="text.touched && text.invalid" >
+            <p  class="alert-danger" *ngIf="text.errors.required">*this field is required</p>
+         </div>
+    </div>
+    <div class="form-group">
+        <input type="text" name="text" id="text1" placeholder="Movie Description"class="form-control" formControlName="text" >
+        <div *ngIf ="text.touched && text.invalid" >
+           <p  class="alert-danger" *ngIf="text.errors.required">*this field is required</p>
+        </div>
+   </div>
+   <div class="form-group">
+    <button type="submit" class="btn-outline-success float-right" [disabled]="form.invalid">ADD</button>
+</div>
+</form>

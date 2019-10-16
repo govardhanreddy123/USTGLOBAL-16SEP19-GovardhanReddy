@@ -1,1 +1,0 @@
-# USTGLOBAL-16SEP19-GovardhanReddy
