@@ -1,0 +1,58 @@
+package org.ThirdApp;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ThirdDemo {
+
+	public static void main(String[] args)
+	{
+		Connection con=null;
+		Statement stmt=null;
+	try
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		System.out.println("Driver loaded and regd.");
+		con=DriverManager.getConnection("jdbc:mysql://locolhost:3306?user=root&password=root");
+		System.out.println("connection established");
+		stmt=con.createStatement();
+		System.out.println("platform created");
+	} catch (ClassNotFoundException | SQLException e)
+	{
+		
+		e.printStackTrace();
+	}
+	finally
+	{
+		if(con!=null)
+		{
+			try
+			{
+				con.close();
+			}
+			catch(SQLException e)
+			{
+				e.printStackTrace();
+			}
+			
+		}
+		if(stmt!=null)
+		{
+			try
+			{
+				stmt.close();
+			}
+			catch(SQLException e)
+			{
+				e.printStackTrace();
+			}
+			
+		}
+	}
+	
+
+	}
+
+}

@@ -1,0 +1,48 @@
+form{
+background-image: url(/image/photo-1503389152951-9f343605f61e.jpg);
+background-size: cover;
+height: 400px;
+margin-top: -10px;
+margin-left: -10px;
+margin-right: -10px;
+}
+input[type="text"]
+{
+height: 45px;
+width:600px;
+border: 1px solid black;
+border-radius: 50px;
+text-align: center;
+font-size: 15px;
+outline: none;
+margin-left: 500px;
+margin-top: 170px;
+}
+img{
+   height: 300px;
+   width: 250px;    
+}
+#a1{
+   margin-left: 500px;
+   margin-top: 500px;
+   color:white;
+   font-size: 30px;
+}
+#a2{
+   margin-left: 5 00px;
+   margin-top: 350px;
+   color:white;
+   font-size: 15px;
+}
+#a3{
+   margin-left: 550px;
+   margin-top: 650px;
+   color:white;
+   font-size: 12px;
+}
+#a4{
+   margin-left: 600px;
+   margin-top: 900px;
+   color:white;
+   font-size: 12px;
+}

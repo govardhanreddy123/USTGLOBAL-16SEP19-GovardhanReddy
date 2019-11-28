@@ -1,0 +1,27 @@
+package com.ustglobal.exception.first;
+
+public class TestB {
+	
+ public static void main(String[] args) {
+	System.out.println("main strated");
+	
+	int a= 10;
+	
+	try {
+		int b=10/0;
+		
+	}catch(ArithmeticException ae) {
+		System.out.println("number is divided by zero");
+	}
+	
+	System.out.println();
+	
+	
+	
+	
+	
+	
+	System.out.println("main ended");
+}
+
+}

@@ -1,0 +1,22 @@
+#b1{
+    height: 150px;
+}
+#b2{
+    width: 1000px;
+    margin-left: 200px;
+}
+.form
+{
+    font-weight: bold;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid green;
+    font-size:18px;
+    margin-bottom:16px;
+    margin-left:30px;
+}
+#nm
+{
+    height: 200px;
+    background-color: red;
+}

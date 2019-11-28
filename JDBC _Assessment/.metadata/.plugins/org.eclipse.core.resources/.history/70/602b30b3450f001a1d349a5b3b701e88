@@ -1,0 +1,5 @@
+package com.ustglobal.jdbcassessment.dto;
+
+public class ContactBean {
+
+}
