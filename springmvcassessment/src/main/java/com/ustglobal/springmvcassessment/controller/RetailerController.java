@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
-
 import com.ustglobal.springmvcassessment.beans.Retailer;
 import com.ustglobal.springmvcassessment.repo.RetailerService;
 

@@ -6,9 +6,11 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceUnit;
 import javax.persistence.TypedQuery;
 
+import org.springframework.stereotype.Repository;
+
 import com.ustglobal.springmvcassessment.beans.Retailer;
 
-
+@Repository
 public class ProductDAOImpl implements ProductDAO {
 
 	@PersistenceUnit
@@ -36,7 +38,7 @@ public class ProductDAOImpl implements ProductDAO {
 	@Override
 	public Retailer login(int id, String password) {
 
-		String jpql = "from retailer where id=:id and password=:pass";
+		String jpql = "from Retailer where id=:id and password=:pass";
 		EntityManager manager = factory.createEntityManager();
 		TypedQuery<Retailer>  query = manager.createQuery(jpql,Retailer.class);
 		query.setParameter("id", id);

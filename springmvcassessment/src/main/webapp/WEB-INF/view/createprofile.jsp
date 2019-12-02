@@ -24,18 +24,7 @@
 					<td>Password:</td>
 					<td><input type="password" name="password"></td>
 				</tr>
-				<tr>
-					<td>Doj:</td>
-					<td><input type="date" name="doj"></td>
-				</tr>
-				<tr>
-					<td>Gender:</td>
-					<td><select name="gender" required="required">
-							<option value="M">Male</option>
-							<option value="F">Female</option>
-					</select></td>
-				</tr>
-
+				
 				<tr>
 					<td><input type="reset" value="Reset"></td>
 					<td><input type="submit" value="Register"></td>
